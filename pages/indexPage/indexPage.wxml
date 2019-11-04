@@ -1,0 +1,46 @@
+<!-- 
+
+<body>
+    <div id="A">
+        <input id="inputTxt" type="text" placeholder="Search" />
+        <div id="inputBtn">Go</div>
+    </div>
+</body> -->
+
+<view class="main">
+  <view class="A">
+    <input class="inputTxt" type="text" placeholder="Search Family" />
+    <button class="inputBtn">Go</button>
+  </view>
+  <view class="B" wx:if="{{boolean==true}}">
+    <view class="b-all">
+      <view class="b-left">
+        <p>家庭名称:</p>
+        <p>拥有者:</p>
+        <p>创建时间:</p>
+        <p>所属地区:</p>
+      </view>
+      <view class="b-right">
+        <p>{{familyName}}</p>
+        <p>{{owner}}</p>
+        <p>{{create_time}}</p>
+        <p>{{address}}</p>
+      </view>
+    </view>
+    <view class="C">
+      <button class="confirm">Go</button>
+    </view>
+  </view>
+  <view class="B-else" wx:if="{{boolean==false}}">
+    <view class="b-else-all">
+      <p>还没有创建该家庭，是否前往创建?</p>
+    </view>
+    <view class="b-else-button">
+      <button class="confirm">Register</button>
+    </view>
+  </view>
+</view>
+
+
+
+

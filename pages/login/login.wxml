@@ -1,0 +1,13 @@
+
+<view class="progress">
+  <view class="progress-title">欢迎来到Family!</view>
+  <view class="progress-box">
+    <progress stroke-width="18" border-radius="10" active="true" percent="{{loadingPercent}}" show-info bindactiveend="showButton"></progress>
+  </view>
+  <view class="progress-button">
+    <button class="butto" open-type="getUserInfo" style="opacity:0" animation="{{animation}}" bindgetuserinfo="bindGetUserInfo">进入Family</button>
+  </view>
+</view>
+
+
+
