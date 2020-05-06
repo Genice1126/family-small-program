@@ -1,0 +1,22 @@
+<view class="main">
+  <view class="add">
+    <button class="btAdd">添加新备忘</button>
+  </view>
+  <view class="line"></view>
+
+  <view class="top_list">
+    <view class="top_list_main">
+      <view class="top_list_main_big">
+        <p class="top_topic">距离 {{eventName}} 还有</p>
+        <p class="top_date">目标日:{{eventTime}} {{eventWeek}}</p>
+      </view>
+      <p class="top_day">{{eventDay}}</p>
+      <p class="top_word">天</p>
+    </view>
+    <view class="top_list_child" wx:for="{{eventArray}}" wx:key="key" style='background-color:{{item.color}}'>
+      <p class="top_child_topic">距离 {{item.eventName}} 还有</p>
+      <p class="top_child_day">{{item.eventDay}}</p>
+      <p class="top_child_word">天</p>
+    </view>
+  </view>
+</view>

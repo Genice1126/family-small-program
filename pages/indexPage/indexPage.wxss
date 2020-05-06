@@ -17,7 +17,7 @@
 }
 .inputTxt {
   width: 260px;
-  height: 28px;
+  height: 33px;
   margin-left: 0px;
 }
 .inputBtn {
